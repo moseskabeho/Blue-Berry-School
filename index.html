@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Berry Junior School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <link rel="stylesheet" href="img/001.png">
+        <section>
+            <h1>Welcome to Blue Berry Junior School</h1>
+            <p><i>Nurturing Young Minds for a Bright Future</i></p>
+
+            <p>
+                At Blue Berry Junior School, we provide a safe, caring, and inspiring
+                environment where every child is encouraged to learn, grow, and succeed.
+                We believe that every child is unique and deserves the best foundation
+                for their future.
+            </p>
+
+            <button type="button">Learn More</button>
+            <button type="button">Join Us Today</button>
+        </section>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Our School</h2>
+
+        <p>
+            Blue Berry Junior School is a leading primary school dedicated to providing
+            quality education and strong moral values. We focus on developing each child
+            academically, socially, and emotionally in a supportive environment.
+        </p>
+
+        <p>
+            Our experienced teachers use modern teaching methods to ensure that every
+            learner understands and enjoys their educational journey.
+        </p>
+
+        <h3>Mission</h3>
+        <p>
+            To provide quality education that nurtures creativity, discipline,
+            and confidence in every child.
+        </p>
+
+        <h3>Vision</h3>
+        <p>
+            To be a center of excellence in primary education, shaping responsible
+            and successful future leaders.
+        </p>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics">
+        <h2>Our Academic Programme</h2>
+
+        <p>
+            We offer a well-structured curriculum designed to meet the needs
+            of young learners at different levels.
+        </p>
+        <div class="card-container">
+
+             <div class="card">
+            <h3>Baby Class</h3>
+            <p>
+                A fun and interactive environment where children begin their
+                learning journey through play and creativity.
+            </p>
+            </div>
+
+             <div class="card">
+            <h3>Middle Class</h3>
+            <p>
+                Focus on basic literacy, numeracy, and social skills development.
+            </p>
+         </div>
+
+            <div class="card">
+            <h3>Top Class</h3>
+            <p>
+                Preparing learners for primary education with strong foundational skills.
+            </p></div>
+
+            <div class="card">
+            <h3>Primary Section (P1 – P7)</h3>
+            <p>
+                A comprehensive curriculum that equips learners with knowledge,
+                skills, and values for future success.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <!-- Add this CSS to your <style> tag or CSS file -->
+<style>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* This is the key: it creates 4 equal columns in ONE row */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; /* Space between cards */
+    margin-top: 20px;
+
+    .gallery-card img {
+    width: 100%;       /* Fills the card width */
+    height: 200px;     /* Set a fixed height for all images */
+    object-fit: cover; /* Crops the image to fit the height without stretching */
+    display: block;
+    border-radius: 4px;
+}
+
+}
+
+.gallery-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.gallery-card img {
+    width: 100%; /* Makes image fill the card width */
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+</style>
+
+<!-- Use this specific HTML structure -->
+<section id="gallery">
+    <div class="container">
+        <h2>School Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="img/002.jpg" alt="Activity 1">
+            </div>
+            <div class="gallery-card">
+                <img src="img/003.jpg" alt="Activity 2">
+            </div>
+            <div class="gallery-card">
+                <img src="img/004.jpg" alt="Activity 3">
+            </div>
+            <div class="gallery-card">
+                <img src="img/005.jpg" alt="Activity 4">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+
+        <p>
+            We would love to hear from you! Reach out to us for admissions,
+            inquiries, or visits.
+        </p>
+
+        <details>
+            <summary>Contact Information</summary>
+            <p><strong>Location:</strong> Kampala, Uganda</p>
+            <p><strong>Phone:</strong> +256 700 000000</p>
+            <p><strong>Email:</strong> info@blueberryschool.com</p>
+        </details>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blue Berry Junior School is committed to providing quality education
+            and shaping the future of young learners through knowledge,
+            discipline, and creativity.
+        </p>
+
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
